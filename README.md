@@ -1,16 +1,15 @@
-# pure-ts-scss-2023
+# poker-hand-soter-argenti-2023
 
-- ✨pure-ts-scss-playground ✨
+- ✨sort and compare ✨
 
 ### Installation
 
-Requires [Node.js](https://nodejs.org/), npm or yarn.
+Requires [Python](https://www.python.org/downloads/)
 
 ### Run
 
 ```sh
-git clone https://github.com/Vinci-da-Gama/pure-ts-scss-2023.git
-cd pure-ts-scss-2023
-npm install or yarn install
-npm start or yarn start
+git clone https://github.com/Vinci-da-Gama/Poker_Hand_Sorter-2023.git
+cd Poker_Hand_Sorter-2023
+
 ```
