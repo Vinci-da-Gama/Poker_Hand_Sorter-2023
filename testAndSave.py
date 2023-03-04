@@ -1,6 +1,8 @@
 import os
 from datetime import datetime
 
+from variables.Cards import handRanks, cardValues, cardSuits
+
 # Prompt user to enter path to file
 testFile = input("Enter Pocker Hand Sorter path to test file: ")
 
@@ -30,33 +32,13 @@ dateTimeStr = now.strftime("%Y-%m-%d_%H-%M-%S")
 resultFileName = f"result_{dateTimeStr}.txt"
 outputPath = os.path.join(resultDir, resultFileName)
 
-# Define the poker hands in ascending order
-POKER_HANDS = ["High card", "Pair", "Two pairs", "Three of a kind", "Straight", "Flush", "Full house", "Four of a kind", "Straight flush", "Royal flush"]
-
-# Define the card values
-card_values = {
-  "2": 2,
-  "3": 3,
-  "4": 4,
-  "5": 5,
-  "6": 6,
-  "7": 7,
-  "8": 8,
-  "9": 9,
-  "T": 10,
-  "J": 11,
-  "Q": 12,
-  "K": 13,
-  "A": 14
-}
-
-# Define the card suits
-card_suits = {
-  "D": "Diamonds",
-  "H": "Hearts",
-  "S": "Spades",
-  "C": "Clubs"
-}
+# Print message ensure external vars are imported
+externalVarsPrintout = '''
+handRanks: {}
+cardValues: {}
+cardSuits: {}
+'''.format(handRanks, cardValues, cardSuits)
+print(externalVarsPrintout)
 
 # tmp fake scores
 scores = {"Player 1": 1, "Player 2": 2}
@@ -69,8 +51,8 @@ with open(outputPath, 'w') as resultFile:
 resultFile.close()
 
 # Print message confirming output file has been saved
-totalLinesPrintout = '''
+outputFilePrintout = '''
 file save to: {}
 date and time: {}
 '''.format(outputPath, dateTimeStr)
-print(totalLinesPrintout)
+print(outputFilePrintout)
