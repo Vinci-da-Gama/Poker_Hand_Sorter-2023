@@ -5,8 +5,8 @@ from datetime import datetime
 testFile = input("Enter Pocker Hand Sorter path to test file: ")
 
 # Open file, read its contents
-with open(testFile, 'r') as f:
-  lines = f.readlines()
+with open(testFile, 'r') as readingFile:
+  lines = readingFile.readlines()
 
 # Remove empty lines
 lines = [line.strip() for line in lines if line.strip()]
@@ -29,9 +29,16 @@ now = datetime.now()
 dateTimeStr = now.strftime("%Y-%m-%d_%H-%M-%S")
 resultFileName = f"result_{dateTimeStr}.txt"
 outputPath = os.path.join(resultDir, resultFileName)
-with open(outputPath, 'w') as f:
-    for line in lines:
-        f.write(line + '\n')
+
+# tmp fake scores
+scores = {"Player 1": 1, "Player 2": 2}
+
+with open(outputPath, 'w') as resultFile:
+  for player, score in scores.items():
+    resultFile.write(f"{player}: {score}\n")
+
+# finish and close file
+resultFile.close()
 
 # Print message confirming output file has been saved
 totalLinesPrintout = '''
