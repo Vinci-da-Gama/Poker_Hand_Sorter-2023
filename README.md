@@ -27,7 +27,9 @@ Player 2: {num}
 ```
 
 > Step 3
-Learn and understand the poker hand rules. Then define ranks variables.
+Learn and understand the poker hand rules. Then define ranks and cardValue.
+Find Rank and combition for ['AH', '9S', '4D', 'TD', '8S'] -- Player 1
+Find Rank and combition for ['4H', 'JS', '3C', 'TC', '8D'] -- Player 2
 
 > Step 4
 Take 1 line, split that line into 2 arrays, then compare according to the poker hand sorter rules, then record the result, and also display the result in the terminal.
