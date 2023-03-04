@@ -27,6 +27,9 @@ Player 2: {num}
 ```
 
 > Step 3
+Learn and understand the poker hand rules. Then define ranks variables.
+
+> Step 4
 Take 1 line, split that line into 2 arrays, then compare according to the poker hand sorter rules, then record the result, and also display the result in the terminal.
 
 
