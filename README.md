@@ -6,13 +6,16 @@
 
 Requires [Python3](https://www.python.org/downloads/)
 
-### Run
+### Implement
 
 ```sh
 git clone https://github.com/Vinci-da-Gama/Poker_Hand_Sorter-2023.git
 cd Poker_Hand_Sorter-2023
-
+python3 readTestSave.py
 ```
+
+The result would be presented in terminal, and also save to a file like: testOutcome/result_{Date}_{Time}.txt
+
 ### Development steps:
 
 > Step 1
