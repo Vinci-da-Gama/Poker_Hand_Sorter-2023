@@ -39,8 +39,4 @@ cardValues = {
 # }
 
 # Define the winner
-whoWins = {
-  "P1": "Player 1",
-  "P2": "Player 2",
-  "T": "Tie"
-}
+whoWins = ["Player 1", "Player 2", "Tie"]

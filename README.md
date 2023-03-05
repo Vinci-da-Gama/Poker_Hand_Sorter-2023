@@ -34,4 +34,9 @@ Learn and understand the poker hand rules. Split 1 line into 2 lists.
 > Step 4
 Take 1 line [AH 9S 4D TD 8S 4H JS 3C TC 8D], split that line into 2 arrays, then compare according to the poker hand sorter rules, then record the result, and also display the result in the terminal and file.
 
+1. split 1 line
+2. find the rank for each hand
+3. return hand rank to find who is the winner
+4. +1 for the winning hand for each winner
+5. print the result into terminal
 
