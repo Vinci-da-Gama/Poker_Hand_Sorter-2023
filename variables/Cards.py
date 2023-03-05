@@ -1,16 +1,17 @@
 # Define the possible hand ranks
-handRanks = {
-    'High Card': 1,
-    'Pair': 2,
-    'Two Pair': 3,
-    'Three of a Kind': 4,
-    'Straight': 5,
-    'Flush': 6,
-    'Full House': 7,
-    'Four of a Kind': 8,
-    'Straight Flush': 9,
-    'Royal Flush': 10
-}
+# Rank could be defined directly into the func
+# handRanks = {
+#     'High Card': 1,
+#     'Pair': 2,
+#     'Two Pair': 3,
+#     'Three of a Kind': 4,
+#     'Straight': 5,
+#     'Flush': 6,
+#     'Full House': 7,
+#     'Four of a Kind': 8,
+#     'Straight Flush': 9,
+#     'Royal Flush': 10
+# }
 
 # Define the card values
 cardValues = {
@@ -40,3 +41,6 @@ cardValues = {
 
 # Define the winner
 whoWins = ["Player 1", "Player 2", "Tie"]
+
+# Define Royal Flush values
+royalFlushValues = [10, 11, 12, 13, 14]
