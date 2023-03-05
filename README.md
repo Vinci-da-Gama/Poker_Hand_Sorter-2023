@@ -4,7 +4,7 @@
 
 ### Installation
 
-Requires [Python](https://www.python.org/downloads/)
+Requires [Python3](https://www.python.org/downloads/)
 
 ### Run
 

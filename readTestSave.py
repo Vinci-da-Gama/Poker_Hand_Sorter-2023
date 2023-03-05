@@ -11,7 +11,7 @@ scores = {whoWins[0]: 0, whoWins[1]: 0}
 testFile = input("Enter Pocker Hand Sorter path to test file: ")
 
 # Open file, read its contents, then compare
-with open(testFile, 'r') as readingFile:
+with open(testFile, 'r', encoding='utf-8') as readingFile:
   for line in readingFile:
     # Ignore empty lines
     if line.strip() == "":
@@ -21,12 +21,12 @@ with open(testFile, 'r') as readingFile:
     hand1 = cards[:5]
     hand2 = cards[5:]
     # Compare the hands and update the number of wins
-    result = matchHands(hand1, hand2)
-    if result != whoWins[2]:
-      scores[result] += 1
+    RESULT = matchHands(hand1, hand2)
+    if RESULT != whoWins[2]:
+      scores[RESULT] += 1
 
 # Print the results to the terminal
-print("\nPlayer 1: {}, Player 2: {}".format(scores[whoWins[0]], scores[whoWins[1]]))
+print(f"\nPlayer 1: {scores[whoWins[0]]}, Player 2: {scores[whoWins[1]]}")
 
 # Create test output directory if it doesn't exist
 os.makedirs(resultDir, exist_ok=True)
@@ -36,7 +36,7 @@ dateTimeStr = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
 resultFileName = f"result_{dateTimeStr}.txt"
 outputPath = os.path.join(resultDir, resultFileName)
 
-with open(outputPath, 'w') as resultFile:
+with open(outputPath, 'w', encoding='utf-8') as resultFile:
   for player, score in scores.items():
     resultFile.write(f"{player}: {score}\n")
 
