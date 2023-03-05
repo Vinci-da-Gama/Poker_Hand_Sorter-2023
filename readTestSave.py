@@ -22,14 +22,11 @@ with open(testFile, 'r') as readingFile:
     hand2 = cards[5:]
     # Compare the hands and update the number of wins
     result = matchHands(hand1, hand2)
-    if result == whoWins[0]:
-        scores[whoWins[0]] += 1
-    elif result == whoWins[1]:
-        scores[whoWins[1]] += 1
-
+    if result != whoWins[2]:
+      scores[result] += 1
 
 # Print the results to the terminal
-print("\n\nPlayer 1: {}, Player 2: {}".format(scores[whoWins[0]], scores[whoWins[1]]))
+print("\nPlayer 1: {}, Player 2: {}".format(scores[whoWins[0]], scores[whoWins[1]]))
 
 # Create test output directory if it doesn't exist
 os.makedirs(resultDir, exist_ok=True)
@@ -48,7 +45,7 @@ resultFile.close()
 
 # Print message confirming output file has been saved
 outputFilePrintout = '''
-file save to: {}
-date and time: {}
+File save to: {}
+Date and time: {}
 '''.format(outputPath, dateTimeStr)
 print(outputFilePrintout)
