@@ -16,7 +16,7 @@ python3 readTestSave.py
 
 The result would be presented in terminal, and also save to a file like: testOutcome/result_{Date}_{Time}.txt
 
-![result file](/Users/boamia/Desktop/result_file_phs.png)
+![result file](https://ibb.co/p1HQNBN)
 
 ### Development steps:
 
