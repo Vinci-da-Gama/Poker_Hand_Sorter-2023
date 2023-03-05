@@ -30,9 +30,17 @@ cardValues = {
 }
 
 # Define the card suits
-cardSuits = {
-  "D": "Diamonds",
-  "H": "Hearts",
-  "S": "Spades",
-  "C": "Clubs"
+# It is useless -- Note - suits are not taken into account to break a tie for this exercise - only the value of the card determines a winner.
+# cardSuits = {
+#   "D": "Diamonds",
+#   "H": "Hearts",
+#   "S": "Spades",
+#   "C": "Clubs"
+# }
+
+# Define the winner
+whoWins = {
+  "P1": "Player 1",
+  "P2": "Player 2",
+  "T": "Tie"
 }
