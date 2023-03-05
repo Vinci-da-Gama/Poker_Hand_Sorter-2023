@@ -3,9 +3,7 @@ from variables.Cards import cardValues, whoWins, royalFlushValues
 # Define func to find the rank of a hand
 def findRank(hand):
   values = [cardValues[card[0]] for card in hand]
-  print('values: ' + str(values))
   suits = [card[1] for card in hand]
-  print('suits: ' + str(suits))
   values.sort()
   if len(set(suits)) == 1 and values == royalFlushValues:
     return 9  # Royal Flush

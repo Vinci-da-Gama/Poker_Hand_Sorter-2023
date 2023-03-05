@@ -44,3 +44,5 @@ whoWins = ["Player 1", "Player 2", "Tie"]
 
 # Define Royal Flush values
 royalFlushValues = [10, 11, 12, 13, 14]
+
+resultDir = "testOutcome"

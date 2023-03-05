@@ -42,3 +42,10 @@ Take 1 line [AH 9S 4D TD 8S 4H JS 3C TC 8D], split that line into 2 arrays, then
 
 > Step 5
 Try 3 lines, and move funcs to an external file.
+
+> Step 6
+Test the file provided -- poker-hands.txt
+result is --> Player 1: 255, Player 2: 245
+
+> Step 7
+Remove unnecessary printout and optimize the code.
