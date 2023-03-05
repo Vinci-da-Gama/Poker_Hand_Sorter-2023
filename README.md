@@ -40,3 +40,5 @@ Take 1 line [AH 9S 4D TD 8S 4H JS 3C TC 8D], split that line into 2 arrays, then
 4. +1 for the winning hand for each winner
 5. print the result into terminal
 
+> Step 5
+Try 3 lines, and move funcs to an external file.
